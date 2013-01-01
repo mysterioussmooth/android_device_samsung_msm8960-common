@@ -133,11 +133,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/msm8960-common/idc/qwerty.idc:system/usr/idc/qwerty.idc \
     device/samsung/msm8960-common/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
 
-# Needed to reset bootmode when leaving recovery
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
-	$(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/system/bin/postrecoveryboot.sh
-
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
